@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Inventario extends Model
 {
-    //
+    use HasFactory;//
+    protected $primaryKey = 'InventarioID';
 }

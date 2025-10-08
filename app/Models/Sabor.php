@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Sabor extends Model
 {
-    //
+    use HasFactory;//
+
+    protected $primaryKey = 'SaborID';
+    protected $table = 'sabores';
 }

@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Venta extends Model
 {
-    //
+    use HasFactory;//
 }

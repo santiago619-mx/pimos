@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Producto; // <- IMPORTANTE
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,7 +17,7 @@ class InventarioFactory extends Factory
      */
     public function definition(): array
     {
-    return [
+        return [
         'ProductoID' => Producto::factory(),
         'Cantidad' => $this->faker->numberBetween(1, 100),
         'FechaActualizacion' => $this->faker->date(),
